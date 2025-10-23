@@ -1,0 +1,376 @@
+:root {
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(0 0% 0%);
+
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(0 0% 0%);
+
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(0 0% 0%);
+
+    --primary: #D8031D;
+    --primary-foreground: hsl(0 0% 100%);
+
+    --secondary: hsl(0 0% 96%);
+    --secondary-foreground: hsl(0 0% 0%);
+
+    --muted: hsl(0 0% 96%);
+    --muted-foreground: hsl(0 0% 45%);
+
+    --accent: #D8031D --accent-foreground: hsl(0 0% 100%);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 100%);
+
+    --border: hsl(0 0% 90%);
+    --input: hsl(0 0% 90%);
+    --ring: #D8031D;
+
+    --radius: 0.5rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(352 98% 43%), hsl(352 98% 53%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 15%));
+    --gradient-light: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 100%));
+
+    --sidebar-background: hsl(0 0% 98%);
+    --sidebar-foreground: hsl(240 5.3% 26.1%);
+    --sidebar-primary: hsl(240 5.9% 10%);
+    --sidebar-primary-foreground: hsl(0 0% 98%);
+    --sidebar-accent: hsl(240 4.8% 95.9%);
+    --sidebar-accent-foreground: hsl(240 5.9% 10%);
+    --sidebar-border: hsl(220 13% 91%);
+    --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.dark {
+    --background: hsl(0 0% 0%);
+    --foreground: hsl(0 0% 100%);
+
+    --card: hsl(0 0% 0%);
+    --card-foreground: hsl(0 0% 100%);
+
+    --popover: hsl(0 0% 0%);
+    --popover-foreground: hsl(0 0% 100%);
+
+    --primary: hsl(352 98% 43%);
+    --primary-foreground: hsl(0 0% 100%);
+
+    --secondary: hsl(0 0% 10%);
+    --secondary-foreground: hsl(0 0% 100%);
+
+    --muted: hsl(0 0% 10%);
+    --muted-foreground: hsl(0 0% 65%);
+
+    --accent: hsl(352 98% 43%);
+    --accent-foreground: hsl(0 0% 100%);
+
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(0 0% 100%);
+
+    --border: hsl(0 0% 20%);
+    --input: hsl(0 0% 20%);
+    --ring: hsl(352 98% 43%);
+
+    --sidebar-background: hsl(240 5.9% 10%);
+    --sidebar-foreground: hsl(240 4.8% 95.9%);
+    --sidebar-primary: hsl(224.3 76.3% 48%);
+    --sidebar-primary-foreground: hsl(0 0% 100%);
+    --sidebar-accent: hsl(240 3.7% 15.9%);
+    --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+    --sidebar-border: hsl(240 3.7% 15.9%);
+    --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    border-color: var(--border);
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--aspekta);
+    font-style: normal;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.sp-font {
+    font-family: 'PPEditorialOld';
+    font-weight: 200 !important;
+}
+
+.italic-font {
+    font-style: italic;
+}
+
+/* Layout container */
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Logo animation styles */
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    transition: filter 300ms;
+    will-change: filter;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+/* Card and text styles */
+.card {
+    padding: 2em;
+    background-color: var(--card);
+    color: var(--card-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.landing-custom-button {
+    color: #fff;
+    background: #D8031D;
+    border: 1px solid transparent;
+    display: inline-flex;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-family: var(--aspekta);
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 400;
+    transition: 0.4s all ease;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.landing-custom-button.black-bg {
+    background-color: #000 !important;
+}
+
+.landing-custom-button.white-bg {
+    background-color: #fff !important;
+    color: #D8031D!important;
+}
+
+.landing-custom-button.large-button {
+    font-size: 24px !important;
+}
+
+.landing-color-red {
+    color: #D8031D;
+}
+
+.who-we-are-text {
+    color: #D8031D;
+    font-size: 28px !important;
+}
+
+.why-trust-us-section .from-secondary {
+    background: #D8031D !important;
+    color: #fff !important;
+}
+
+.cta-section {
+    background-color: #000;
+}
+
+.landing-red-bg {
+    background-color: #D8031D !important;
+}
+
+.landing-black-bg {
+    background-color: #000 !important;
+}
+
+.landing-white-bg {
+    background-color: #fff !important;
+}
+
+.border-solid-red {
+    border: 1px solid #D8031D !important;
+}
+
+.landing-footer {
+    background-color: #bc0117;
+    bottom: 0 !important
+}
+
+.landing-footer .landing-container {
+    display: block
+}
+
+.landing-footer-in {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%
+}
+
+.landing-footer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+
+.landing-footer-in .cd-right a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    transition: .3s;
+    text-decoration: underline
+}
+
+.landing-footer-in .cd-right a:hover {
+    cursor: pointer;
+    color: #767676
+}
+
+.landing-footer-container {
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.advertorial-page .landing-footer a:hover {
+    color: #bcbaba
+}
+
+.advertorial-page .copyright-div {
+    border-top: .5px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.advertorial-page .copyright-div .cd-right {
+    display: flex;
+    gap: 30px
+}
+
+.payment-trust-icon {
+    width: 230px;
+    margin-top: 20px;
+    margin-left: auto
+}
+
+.landing-footer .logo-image {
+    width: 300px;
+    margin: 0 auto;
+    max-width: 300px
+}
+
+.landing-footer-in .bottom .trust-icon-wrap,
+.sp-logos-in-mid-content-grid .trust-icon-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center
+}
+
+.landing-footer-in .bottom .landing-footer-img,
+.sp-logos-in-mid-content-grid .trust-icon-wrap .slimc-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.landing-footer-in .bottom .landing-footer-img img,
+.sp-logos-in-mid-content-grid .trust-icon-wrap .slimc-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 180px;
+    max-height: 80px
+}
+
+.build-business-section {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.build-business-section .text-muted-foreground {
+    color: #fefefe !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    .landing-footer-container {
+        padding: 60px 20px
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .advertorial-page .copyright-div .cd-right {
+        justify-content: space-between;
+    }
+
+    .advertorial-page .landing-footer .landing-container {
+        padding-bottom: 30px
+    }
+
+    .landing-footer-in .bottom .landing-footer-img img {
+        max-width: 100px;
+        max-height: 50px
+    }
+
+    .landing-footer-container {
+        padding: 30px 20px
+    }
+
+    .advertorial-page .copyright-div {
+        padding: 10px 20px;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+        gap: 10px;
+        font-size: 12px
+    }
+
+    .payment-trust-icon {
+        width: 150px;
+        margin: 20px auto 0
+    }
+}

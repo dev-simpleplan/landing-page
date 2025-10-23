@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Plan - Built Business</title>
+  <!-- OPTIMIZATION 2: Reduced font preloads - only preload critical fonts -->
+  <link rel="preload"
+    href="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/fonts/PPEditorialOld-light.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link rel="preload"
+    href="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/fonts/PPEditorialOld-Regular.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link rel="preload"
+    href="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/fonts/PPEditorialOld-Ultrabold.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/fonts/AspektaVF.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+
+  <!--  Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--  Tailwind config (works with full hsl() variables) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "var(--background)",
+            foreground: "var(--foreground)",
+            primary: "var(--primary)",
+            secondary: "var(--secondary)",
+            muted: "var(--muted)",
+            "muted-foreground": "var(--muted-foreground)",
+            border: "var(--border)",
+          },
+        },
+      },
+    };
+  </script>
+
+</head>
+
+<body class="bg-background  overflow-x-hidden">
+  <main class="min-h-screen overflow-hidden advertorial-page">
+
+    <!-- Hero Section -->
+    <section class="relative px-6 py-20 md:py-32 max-w-6xl mx-auto text-center">
+      <div class="absolute top-10 right-10 w-32 h-32 rounded-full bg-primary/5 blur-2xl"></div>
+      <div class="absolute top-40 left-0 w-48 h-48 rounded-full bg-primary/10 blur-3xl"></div>
+
+      <div class="relative space-y-8 animate-in fade-in duration-700">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-light five-min-pill border-solid-red border-solid">
+          <span>5-Minute Brand Assessment</span>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
+          You've built the business.<br />
+          So why doesn't it feel like<br />
+          a <span class="text-primary font-normal sp-font landing-color-red italic-font">brand</span> yet?
+        </h1>
+
+        <p class="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+          Answer 9 quick questions to uncover what's holding your brand back, and how to fix it.
+        </p>
+
+        <a href="/assessment/start"
+          class="inline-flex items-center justify-center px-6 py-3 mt-8 text-white bg-primary rounded-full text-lg font-light hover:shadow-lg transition-all group landing-custom-button large-button">
+          Start the Assessment
+        </a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="relative px-6 py-20 bg-gradient-to-br  to-primary/5 build-business-section">
+      <div class="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
+
+      <div class="relative max-w-5xl mx-auto space-y-16 text-center">
+        <div class="space-y-6">
+          <p class="text-3xl md:text-4xl font-light leading-relaxed">
+            Building a business is hard.
+          </p>
+          <p class="text-xl md:text-2xl font-light leading-relaxed text-muted-foreground max-w-3xl mx-auto">
+            But building a brand—one people instantly get, remember, and trust—takes something more.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 pt-8">
+          <!-- Clarity -->
+          <div class="group">
+            <div class="relative mb-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div
+                  class="w-20 h-20 rounded-full bg-background flex items-center justify-center text-primary text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-target h-10 w-10 text-primary">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-lg font-normal mb-3">Clarity</h3>
+            <p class="font-light text-muted-foreground">
+              Measure how clearly your brand communicates its value
+            </p>
+          </div>
+
+          <!-- Positioning -->
+          <div class="group">
+            <div class="relative mb-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-foreground/20 to-foreground/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div class="w-20 h-20 rounded-full bg-background flex items-center justify-center  text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-trending-up h-10 w-10 text-foreground">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-lg font-normal mb-3">Positioning</h3>
+            <p class="font-light text-muted-foreground">
+              Identify if your positioning is helping or hurting your growth
+            </p>
+          </div>
+
+          <!-- Strategy -->
+          <div class="group">
+            <div class="relative mb-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div
+                  class="w-20 h-20 rounded-full bg-background flex items-center justify-center text-primary text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-zap h-10 w-10 text-primary">
+                    <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-lg font-normal mb-3">Strategy</h3>
+            <p class="font-light text-muted-foreground">
+              Get a tailored plan to sharpen your strategy, messaging, and visuals
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center pt-8">
+          <a
+            class="text-2xl font-light inline-block px-6 py-3 rounded-full bg-foreground/5 landing-custom-button white-bg landing-color-red">
+            In 5 minutes, you'll discover where your brand really stands — and
+            how to fix it.
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="relative px-6 py-20 max-w-6xl mx-auto">
+      <div class="absolute top-20 left-10 w-40 h-40 rounded-full bg-foreground/5 blur-3xl"></div>
+
+      <div class="relative grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-12">
+          <div class="space-y-4">
+            <h2 class=" tracking-wider uppercase text-primary font-normal who-we-are-text">Who We Are</h2>
+            <p class="text-2xl md:text-3xl font-light leading-relaxed">
+              SimplePlan Media is an end-to-end brand development studio that builds brands from idea to launch.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-sm uppercase tracking-wider /60 font-normal who-we-are-text">What we do</h2>
+            <p class="text-2xl md:text-3xl font-light leading-relaxe">
+              We've helped 200+ brands — from startups to established businesses — find their unique voice through
+              branding, strategy, websites, and marketing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-8">
+          <div class="text-center group">
+            <div
+              class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 landing-red-bg">
+              <div class="text-white">
+                <div class="text-4xl font-light">200+</div>
+                <div class="text-sm font-light mt-1">Brands</div>
+              </div>
+            </div>
+            <p class="text-sm font-light text-muted-foreground">Built from scratch</p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-foreground to-foreground/70 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 landing-black-bg">
+              <div class="text-white">
+                <div class="text-4xl font-light">8+</div>
+                <div class="text-sm font-light mt-1">Years</div>
+              </div>
+            </div>
+            <p class="text-sm font-light text-muted-foreground">Of experience</p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/80 to-primary/50 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 landing-black-bg">
+              <div class="text-white">
+                <div class="text-4xl font-light">₹100Cr</div>
+                <div class="text-sm font-light mt-1">Funding</div>
+              </div>
+            </div>
+            <p class="text-sm font-light text-muted-foreground">Raised by clients</p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-foreground/80 to-foreground/50 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 landing-red-bg">
+              <div class="text-white">
+                <div class="text-4xl font-light">10M+</div>
+                <div class="text-sm font-light mt-1">Customers</div>
+              </div>
+            </div>
+            <p class="text-sm font-light text-muted-foreground">Reached</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-20 space-y-8 why-trust-us-section">
+        <div class="space-y-6">
+          <h2 class="text-sm uppercase tracking-wider text-primary font-normal who-we-are-text">Why trust us</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div
+              class="flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-br from-secondary to-background border border-border/50">
+
+              <p class="font-light">Expertise across 20+ industries including D2C, tech, wellness, fashion, and real
+                estate</p>
+            </div>
+
+            <div
+              class="flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-br from-foreground/5 to-background border border-border/50">
+
+              <p class="font-light">Our clients have grown communities, scaled sales, and built brands that actually
+                feel like them</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-4xl space-y-4 pt-8">
+          <h2 class="text-sm uppercase tracking-wider /60 font-normal">Research-backed expertise</h2>
+          <p class="text-xl md:text-2xl font-light leading-relaxed">
+            Over the years, we've analyzed hundreds of successful (and struggling) brands to understand what really
+            drives perception, recall, and growth.
+          </p>
+          <p class="text-lg font-light leading-relaxed text-muted-foreground">
+            This assessment distills that expertise — combining brand strategy frameworks, audience psychology, and
+            real-world learnings — into a simple tool to help you see where your brand stands.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="relative px-6 py-20 bg-gradient-to-br from-foreground via-foreground/95 to-primary/20 text-background overflow-hidden text-center cta-section">
+      <div class="absolute top-10 right-20 w-64 h-64 rounded-full bg-primary/20 blur-3xl"></div>
+      <div class="absolute bottom-10 left-20 w-48 h-48 rounded-full bg-background/10 blur-3xl"></div>
+
+      <div class="relative max-w-4xl mx-auto space-y-10">
+        <h2 class="text-3xl md:text-5xl font-light leading-tight">
+          Ready to find out what's missing from your brand story?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div class="flex flex-col items-center gap-3">
+            <div
+              class="w-16 h-16 rounded-full bg-background/20 backdrop-blur-sm flex items-center justify-center landing-white-bg">
+              <span class="text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64">
+                  <path fill="#000000" d="m45 2l-9.396 2.48L29.298 2L19 36.354h10.865L20.352 62L43.65 27.648H29.626z" />
+                </svg></span>
+            </div>
+            <p class="text-sm font-light">Takes less than 5 minutes</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <div
+              class="w-16 h-16 rounded-full bg-background/20 backdrop-blur-sm flex items-center justify-center landing-white-bg">
+              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <path fill="#000000"
+                  d="M55.2 24.9C55.2 12.1 44.8 1.8 32 1.8S8.8 12.1 8.8 24.9c0 8.6 4.8 16.5 12.3 20.5v10.7c0 3.4 2.7 6.1 6.1 6.1h9.5c3.4 0 6.1-2.7 6.1-6.1V45.4c7.6-4 12.4-11.9 12.4-20.5M38.4 56.1c0 .9-.7 1.6-1.6 1.6h-9.5c-.9 0-1.6-.7-1.6-1.6v-9.9h12.7zm1.7-14.3h-5.5v-7.3l5.7-4.4c1-.8 1.2-2.2.4-3.2s-2.2-1.2-3.2-.4l-3 2.3V24c0-1.2-1-2.3-2.3-2.3c-1.2 0-2.3 1-2.3 2.3v5.1l-3.8-2.7c-1-.7-2.4-.5-3.1.5s-.5 2.4.5 3.1l6.4 4.5v7.2h-6.2c-6.4-3.1-10.6-9.7-10.6-16.8c0-10.3 8.4-18.7 18.7-18.7s18.7 8.4 18.7 18.7c.2 7.2-4 13.8-10.4 16.9" />
+              </svg>
+            </div>
+            <p class="text-sm font-light">Get instant, actionable insights</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <div
+              class="w-16 h-16 rounded-full bg-background/20 backdrop-blur-sm flex items-center justify-center landing-white-bg">
+              <span class="text-2xl"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                  fill="#000000">
+                  <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+                    <path
+                      d="M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2zm0 12v-5m3 5v-1m3 1v-3" />
+                  </g>
+                </svg></span>
+            </div>
+            <p class="text-sm font-light">Receive a personalized report</p>
+          </div>
+        </div>
+
+        <a href="/assessment/start"
+          class="inline-flex items-center justify-center px-6 py-3 mt-8 rounded-full text-lg font-light bg-background  hover:bg-background/90 hover:scale-105 transition-all group landing-custom-button white-bg large-button">
+          Take the Quiz
+        </a>
+      </div>
+    </section>
+    <section class="landing-footer">
+      <div class="landing-footer-container">
+        <div class="landing-footer-in">
+          <div class="top">
+            <div class="logo-image">
+              <img src="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/images/simplePlan-Logo.png"
+                alt="Logo">
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="trust-icon-wrap">
+              <div class="landing-footer-img">
+                <img
+                  src="https://www.simpleplanmedia.com/wp-content/uploads/2025/10/SCR-20251009-mwke-removebg-preview.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img
+                  src="https://www.simpleplanmedia.com/wp-content/uploads/2025/10/SCR-20251009-mwpt-removebg-preview.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img src="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/review/award2023-2.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img src="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/review/badge_w_gold.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img src="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/review/award2021.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img src="https://www.simpleplanmedia.com/wp-content/themes/simpleplan/assets/review/award2020.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img src="https://www.simpleplanmedia.com/wp-content/uploads/2025/10/clutch-review-1-1.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img">
+                <img src="https://www.simpleplanmedia.com/wp-content/uploads/2025/10/SCR-20251009-moky.png"
+                  alt="Badges">
+              </div>
+              <div class="landing-footer-img google-trust-icon">
+                <img src="https://www.simpleplanmedia.com/wp-content/uploads/2025/10/google-review-SP-1-1.png"
+                  alt="Badges">
+              </div>
+            </div>
+            <div class="payment-trust-icon">
+              <img src="https://www.simpleplanmedia.com/wp-content/uploads/2025/10/payment-trust-icon.png"
+                alt="Payment Icon">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="copyright-div">
+        <div class="cd-left">© 2025 SimplePlan Media. | All Right Reserve</div>
+        <div class="cd-right">
+          <a href="https://www.simpleplanmedia.com/privacy-policy/">Privacy and Policy</a>
+          <a href="https://www.simpleplanmedia.com/terms-of-service/">Terms & Condition</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
